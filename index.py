@@ -1,6 +1,6 @@
 # example_usage.py
 import cv2
-from trajectory_predictor import TrajectoryPredictor
+from trajectory_prediction import TrajectoryPredictor
 
 # Initialize video capture
 cap = cv2.VideoCapture(0)
