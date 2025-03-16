@@ -1,12 +1,15 @@
 # example_usage.py
 import cv2
-from trajectory_prediction import TrajectoryPredictor
+from trajectory_prediction_2D import TrajectoryPredictor
+from trajectory_prediction_3D import TrajectoryPredictor3D
+
 
 # Initialize video capture
 cap = cv2.VideoCapture(0)
 
 # Create trajectory predictor instance
-predictor = TrajectoryPredictor(
+# predictor = TrajectoryPredictor(
+predictor = TrajectoryPredictor3D(
     history_size=20,
     min_object_size=500,
     landing_box_size=50,
